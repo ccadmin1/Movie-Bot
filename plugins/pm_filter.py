@@ -225,7 +225,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
+             InlineKeyboardButton("🔥𝘿𝙀𝙇𝙀𝙏𝙀", callback_data=f"deletecb:{group_id}")],
             [InlineKeyboardButton("⫷ 𝘽𝘼𝘾𝙆", callback_data="backcb")]
         ])
 
@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
+                InlineKeyboardButton('💫𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
             ]
             ]
             
@@ -753,7 +753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='about'),
-            InlineKeyboardButton('💫𝙍𝙀𝙁𝙍𝙀𝙎𝙃', callback_data='rfrsh')
+            InlineKeyboardButton('♻️𝙍𝙀𝙁𝙍𝙀𝙎𝙃', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
