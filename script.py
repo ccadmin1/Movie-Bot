@@ -10,13 +10,16 @@ class Script(object):
 
 <b>Here Is The Help For My Commands.</b>"""
 
-    ABOUT_TXT = """<b>➥ My name: {}
-➥ Creator: <a href='https://t.me/DhashamoolamDhamu'>DhashamoolamDhamu</a>
-➥ Library: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
-➥ Language: Python 𝟹
-➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
-➥ Bot Server: <a href='https://heroku.com'>Heroku</a>
-➥ Build Status: v2.0.1 [ Beta ]"""
+    ABOUT_TXT = """
+╭━━━━━━━━━━━━━━━➣ 
+┣⪼  ᴍʏ ɴᴀᴍᴇ: {}
+┣ ⪼ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/DhashamoolamDhamu'>ᴅʜᴀꜱʜᴀᴍᴏᴏʟᴀᴍ ᴅʜᴀᴍᴜ</a>
+┣⪼ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
+┣⪼ ʟᴀɴɢᴜᴀɢᴇ: Python 𝟹
+┣⪼ ᴅᴀᴛᴀ ʙᴀꜱᴇ: <a href='https://www.mongodb.com/'>MongoDB</a>
+┣⪼ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: <a href='https://heroku.com'>Heroku</a>
+┣⪼ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: v2.0.1 [ Beta ]
+╰━━━━━━━━━━━━━━━➣"""
 
     SOURCE_TXT = """<b>Source:</b>
 IMDb is a Open source project.
