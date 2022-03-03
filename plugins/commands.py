@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝙐𝙋𝘿𝘼𝙏𝙀𝙎', url='https://t.me/+eyLC_ZNoehZhOWI1')
+                InlineKeyboardButton('💫 𝙐𝙋𝘿𝘼𝙏𝙀𝙎', url='https://t.me/+eyLC_ZNoehZhOWI1')
             ],
             [
-                InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🕴️ 𝙃𝙀𝙇𝙋', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data="close_data"),
             ]
             ]
@@ -43,15 +43,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('🕴️ 𝙃𝙀𝙇𝙋', callback_data='help'),
+            InlineKeyboardButton('🥷 𝘼𝘽𝙊𝙐𝙏', callback_data='about')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('🔎 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙊𝙑𝙄𝙀𝙎 🔍 ', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
@@ -81,7 +78,7 @@ async def start(client, message):
         if message.command[1] != "subscribe":
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            btn.append([InlineKeyboardButton("🔄 Try Again 👈 Tap me 🥰", callback_data=f"{pre}#{file_id}")])
+            btn.append([InlineKeyboardButton("♻️ Try Again 👈 Tap me 🥰", callback_data=f"{pre}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text=Script.FORCESUB_TXT,
@@ -91,14 +88,11 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('🔎 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙊𝙑𝙄𝙀𝙎 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
+            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
             ],[
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
@@ -145,7 +139,7 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
+                    InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
                 ]
                 ]
             try:
