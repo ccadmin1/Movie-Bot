@@ -92,7 +92,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔎 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙊𝙑𝙄𝙀𝙎 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
+            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
             ],[
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
@@ -249,7 +249,7 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+pUnR_Faa60UxZjVl')
+            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
         ]
         ]
     await client.send_cached_media(
