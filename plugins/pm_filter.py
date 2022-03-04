@@ -65,7 +65,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🗂️[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -74,7 +74,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🗂️{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
@@ -225,7 +225,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("🔥𝘿𝙀𝙇𝙀𝙏𝙀", callback_data=f"deletecb:{group_id}")],
+             InlineKeyboardButton("🗑️ 𝘿𝙀𝙇𝙀𝙏𝙀", callback_data=f"deletecb:{group_id}")],
             [InlineKeyboardButton("⫷ 𝘽𝘼𝘾𝙆", callback_data="backcb")]
         ])
 
@@ -358,10 +358,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
             f_caption = f_caption
         if f_caption is None:
-            f_caption = f"{files.file_name}"
+            f_caption = f"🗂️{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('💫𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
+                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
             ]
             ]
             
@@ -537,8 +537,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "auto_manual":
         buttons = [[
-            InlineKeyboardButton('auto', callback_data='autofilter'),
-            InlineKeyboardButton('manual', callback_data='manualfilter')
+            InlineKeyboardButton('🍃 𝘼𝙐𝙏𝙊', callback_data='autofilter'),
+            InlineKeyboardButton('👥 𝙈𝘼𝙉𝙐𝘼𝙇', callback_data='manualfilter')
             ],[
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='help'),
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
