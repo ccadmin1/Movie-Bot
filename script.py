@@ -15,7 +15,7 @@ class Script(object):
 ┣⪼  ᴍʏ ɴᴀᴍᴇ: {}
 ┣ ⪼ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/DhashamoolamDhamu'>ᴅʜᴀꜱʜᴀᴍᴏᴏʟᴀᴍ ᴅʜᴀᴍᴜ</a>
 ┣⪼ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
-┣⪼ 𝚁𝚎𝚙𝚘: https://github.com/ccadmin1/Movie-Bot
+┣⪼ 𝚁𝚎𝚙𝚘: <a href='https://github.com/ccadmin1/Movie-Bot'>ᴄʟɪᴄᴋ</a>
 ┣⪼ ᴅᴀᴛᴀ ʙᴀꜱᴇ: <a href='https://www.mongodb.com/'>MongoDB</a>
 ┣⪼ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: <a href='https://heroku.com'>Heroku</a>
 ┣⪼ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: v2.0.1 [ Beta ]
@@ -235,11 +235,15 @@ This module only works for my admins
 • /channel - to get list of total connected channels.
 • /broadcast - to broadcast a message to all users."""
 
-    STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
+    STATUS_TXT = """
+╭━━━━━━━━━━━━━━━━━━━━━➣
+<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
 <b>Total Chats:</b> <code>{}</code>
 <b>Used Storage:</b> <code>{}</code> MiB
-<b>Free Storage:</b> <code>{}</code> MiB"""
+<b>Free Storage:</b> <code>{}</code> MiB
+╰━━━━━━━━━━━━━━━━━━━━━➣"""
+
 
     FORCESUB_TXT = """**
 **👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
