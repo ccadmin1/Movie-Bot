@@ -73,7 +73,7 @@ You can also customise the contents of your message with contextual data. For ex
 - <code>{id}</code>: The user's ID.
 - <code>{dcid}</code>: The user's DC ID.
 - <code>{chatname}</code>: The chat's name.
-- <code>{query}</code>: Any Message Text.
+- <code>{query}</code>: Replied Message.
 
 <b>Example:</b>
 <b>- Save a filter using the mention.</b>
