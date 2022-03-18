@@ -107,4 +107,4 @@ python3 bot.py
 ## Thanks to 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * Original [Repo](https://github.com/EvamariaTG/EvaMaria)
-Modified ›› [Dhamu](https://t.me/DhashamoolamDhamu)                                                                                                                                        
+🥷 ›› [Dhamu](https://t.me/DhashamoolamDhamu)                                                                                                                                        
