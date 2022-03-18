@@ -104,5 +104,7 @@ python3 bot.py
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
-
+## Thanks to 
+* [Pyrogram](https://github.com/pyrogram/pyrogram)
+* Original [Repo](https://github.com/EvamariaTG/EvaMaria)
 Modified ›› [Dhamu](https://t.me/DhashamoolamDhamu)                                                                                                                                        
