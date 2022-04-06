@@ -45,9 +45,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('   ᴍᴏʀᴇ', callback_data='help')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('??ᴜᴘᴅᴀᴛᴇ??', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -87,9 +87,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('   ᴍᴏʀᴇ', callback_data='help')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('??ᴜᴘᴅᴀᴛᴇ??', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
