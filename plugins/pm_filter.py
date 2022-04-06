@@ -428,7 +428,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍𝙎𝙚𝙖𝙧𝙘𝙝 𝙈𝙤𝙫𝙞𝙚𝙨🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('𝙒𝙃𝙊 𝘼𝙈 𝙄',callback_data='about')
             ],[
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
@@ -815,20 +815,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='about'),
             InlineKeyboardButton('♻️𝙍𝙀𝙁𝙍𝙀𝙎𝙃', callback_data='rfrsh')
         ]]
+        
         await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+            text="AnjalinaBot"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
