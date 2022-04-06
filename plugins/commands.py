@@ -45,12 +45,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🕴️ 𝙃𝙀𝙇𝙋', callback_data='help'),
-            InlineKeyboardButton('🥷 𝘼𝘽𝙊𝙐𝙏', callback_data='about')
+            InlineKeyboardButton('   ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('🔎 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙊𝙑𝙄𝙀𝙎 🔍 ', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
+            InlineKeyboardButton('??ᴜᴘᴅᴀᴛᴇ??', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,11 +87,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 𝙎𝙀𝘼𝙍𝘾𝙃 𝙈𝙊𝙑𝙄𝙀𝙎 🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('   ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
-            ],[
-            InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
+            InlineKeyboardButton('??ᴜᴘᴅᴀᴛᴇ??', url=f'https://t.me/+eyLC_ZNoehZhOWI1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
