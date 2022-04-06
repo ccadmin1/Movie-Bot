@@ -482,13 +482,14 @@ async def settings(client, message):
             disable_web_page_preview=True,
             parse_mode="html",
             reply_to_message_id=message.message_id
-        )
-
+       )
+       
+    
 @Client.on_chat_join_request()
 async def newad(bot, update):
-        print(update.chat.id)
-            await bot.approve_chat_join_request(chat_id=update.chat.id, user_id=update.from_user.id)
-            
+    print(update.chat.id)
+    await bot.approve_chat_join_request(chat_id=update.chat.id, user_id=update.from_user.id)
+
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
