@@ -33,6 +33,7 @@ Very Sempil Bot Auto Filter bot
 - [x] File Store
 - [x] Note Feature Added
 - [x] Purge
+- [x] Automatically accepts requests to join the channel
 
 ## Variables
 
