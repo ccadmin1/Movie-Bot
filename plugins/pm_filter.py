@@ -65,7 +65,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🗂️[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🗂️『{get_size(file.file_size)}』 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -483,22 +483,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀', callback_data='close_data')
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='start')
         ]]
-        await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
+        sts = await query.message.reply_text(
+                  text="▢▢▢"
+        )
+        await sts.edit_text(
+            text="▣▢▢"
+        )
+        await sts.edit_text(
+            text="▣▣▢"
+        )
+        await sts.edit_text(
+                   text="▣▣▣"
+        )
+        await sts.delete(
+        )
         await query.message.edit_text(
             text=Script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -511,22 +510,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='start'),
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
-        await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
+        sts = await query.message.reply_text(
+                  text="▢▢▢"
+        )
+        await sts.edit_text(
+            text="▣▢▢"
+        )
+        await sts.edit_text(
+            text="▣▣▢"
+        )
+        await sts.edit_text(
+                   text="▣▣▣"
+        )
+        await sts.delete(
+        )
         await query.message.edit_text(
             text=Script.ABOUT_TXT.format(temp.B_NAME),
             disable_web_page_preview=True,
