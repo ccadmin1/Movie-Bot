@@ -457,30 +457,30 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Loading....')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('admin', callback_data='admin'),
-            InlineKeyboardButton('connect', callback_data='coct'),
-            InlineKeyboardButton('filters', callback_data='auto_manual'),
+            InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ', callback_data='coct'),
+            InlineKeyboardButton('ғɪʟᴛᴇʀs', callback_data='auto_manual'),
             ],[
-            InlineKeyboardButton('gtrans', callback_data='gtrans'),
-            InlineKeyboardButton('info', callback_data='info'),
-            InlineKeyboardButton('memes', callback_data='memes'),
+            InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans'),
+            InlineKeyboardButton('ɪɴғᴏ', callback_data='info'),
+            InlineKeyboardButton('ᴍᴇᴍᴇs', callback_data='memes'),
             ],[
-            InlineKeyboardButton('paste', callback_data='paste'),
-            InlineKeyboardButton('password gen', callback_data='genpassword'),
-            InlineKeyboardButton('pin', callback_data='pin'),
+            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='paste'),
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin'),
             ],[
-            InlineKeyboardButton('purge', callback_data='purge'),
-            InlineKeyboardButton('restric', callback_data='restric'),
-            InlineKeyboardButton('search', callback_data='search'),
+            InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tgraph'),
+            InlineKeyboardButton('ᴜʀʟ sʜᴏʀᴛɴᴇʀ', callback_data='shortner'),
             ],[
-            InlineKeyboardButton('share text', callback_data='sharetext'),
-            InlineKeyboardButton('music', callback_data='music'),
-            InlineKeyboardButton('tt-speech', callback_data='tts'),
+            InlineKeyboardButton('sʜᴀʀᴇ ᴛᴇxᴛ', callback_data='sharetext'),
+            InlineKeyboardButton('ᴍᴜsɪᴄ', callback_data='music'),
+            InlineKeyboardButton('ᴛᴛ-sᴘᴇᴇᴄʜ', callback_data='tts'),
             ],[
-            InlineKeyboardButton('tgraph', callback_data='tgraph'),
-            InlineKeyboardButton('url shortner', callback_data='shortner'),
-            InlineKeyboardButton('zombies', callback_data='zombies'),
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purge'),
+            InlineKeyboardButton('ʀᴇsᴛʀɪᴄ', callback_data='restric'),
+            InlineKeyboardButton('sᴇᴀʀᴄʜ', callback_data='search'),
             ],[
+            InlineKeyboardButton('𝙎𝙏𝘼𝙏𝙐𝙎', callback_data='stats'),
+            InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀', callback_data='close_data')
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='start')
         ]]
         await query.message.edit_text(
