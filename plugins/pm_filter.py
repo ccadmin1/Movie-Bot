@@ -480,8 +480,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴇᴀʀᴄʜ', callback_data='search'),
             ],[
             InlineKeyboardButton('𝙎𝙏𝘼𝙏𝙐𝙎', callback_data='stats'),
-            InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀', callback_data='close_data')
-            InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='start')
+            InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀', callback_data='close_data'),
+            InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='start'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         sts = await query.message.reply_text(
