@@ -412,7 +412,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton('🔍𝙎𝙚𝙖𝙧𝙘𝙝 𝙈𝙤𝙫𝙞𝙚𝙨🔎', switch_inline_query_current_chat='')
-            ]
+            ],[
+                InlineKeyboardButton(' 𝙂𝙤 𝙄𝙉𝙇𝙄𝙉𝙀 🎭', switch_inline_query='')
+            ],
             ]
         await query.answer()
         await client.send_cached_media(
@@ -428,26 +430,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝙒𝙃𝙊 𝘼𝙈 𝙄',callback_data='about')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ',callback_data='help')
             ],[
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
-        await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
+        sts = await query.message.reply_text(
+                  text="▢▢▢"
+        )
+        await sts.edit_text(
+            text="▣▢▢"
+        )
+        await sts.edit_text(
+            text="▣▣▢"
+        )
+        await sts.edit_text(
+                   text="▣▣▣"
+        )
+        await sts.delete(
+        )
         await query.message.edit_text(
             text=Script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             disable_web_page_preview=True,
@@ -586,23 +587,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⫷ 𝘽𝘼𝘾𝙆', callback_data='help'),
             InlineKeyboardButton('》𝘾𝙇𝙊𝙎𝙀《', callback_data='close_data')
         ]]
-        await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
+         reply_markup = InlineKeyboardMarkup(buttons)
+        sts = await query.message.reply_text(
+                  text="▢▢▢"
         )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
+        await sts.edit_text(
+            text="▣▢▢"
         )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        await sts.edit_text(
+            text="▣▣▢"
         )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        await sts.edit_text(
+                   text="▣▣▣"
         )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+        await sts.delete(
         )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+         await query.message.edit_text(
             text=Script.AUTO_MANUAL_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
@@ -986,7 +986,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/+eyLC_ZNoehZhOWI1'>Anjalina Updates</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
+        cap = f"Here is what i found for your query {search} ᴛᴏᴛᴀʟ ʀᴇsᴜʟᴛs 1/{round(int(total_results) / 10)}.\n✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.\n"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
