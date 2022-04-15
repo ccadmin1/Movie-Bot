@@ -488,9 +488,9 @@ async def settings(client, message):
 @Client.on_chat_join_request()
 async def newad(bot, update):
     print(update.chat.id)
+    await bot.send_message(chat_id=update.from_user.id, text='Accepted ✅')
     await bot.approve_chat_join_request(chat_id=update.chat.id, user_id=update.from_user.id)
-    await bot.send_message(chat_id=update.from_user.id, text='https://t.me/Anjalina_bot')
-
+    
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
     sts = await message.reply("Checking template")
