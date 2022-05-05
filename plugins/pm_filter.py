@@ -975,14 +975,14 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search} ᴛᴏᴛᴀʟ ʀᴇsᴜʟᴛs 1/{round(int(total_results) / 10)}.\n✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.\n"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo="https://te.legra.ph/file/f897dfe83f13b5fcc449a.jpg", caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hehe.delete()
             await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            hmm = await message.reply_photo(photo="https://te.legra.ph/file/f897dfe83f13b5fcc449a.jpg", caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hmm.delete()
             await message.delete()
@@ -993,7 +993,7 @@ async def auto_filter(client, msg, spoll=False):
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://te.legra.ph/file/f897dfe83f13b5fcc449a.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
         await fuk.delete()
         await msg.delete()
