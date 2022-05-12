@@ -162,7 +162,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             [
                 InlineKeyboardButton(
                     text=f"𝙐𝙥𝙙𝙖𝙩𝙚𝙨",
-                    url="https://t.me/+eyLC_ZNoehZhOWI1"
+                    url="https://t.me/+0WycHXxXrWExNmI1"
                 )
             ],
         ]
