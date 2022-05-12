@@ -19,7 +19,7 @@ BOT_TOKEN = "2020023864:AAFIpFkL2X6cdzv3227_ePvQ0Z5-vHO2NtI"
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg')).split()
+PICS = "https://telegra.ph/file/e92a3cfd34f26e84d7701.jpg https://telegra.ph/file/d053a8e9ef4ed93df38a0.jpg https://telegra.ph/file/d1c6ee6d32e142f3674ed.jpg https://telegra.ph/file/8fd7710ee17bd34a963a5.jpg https://telegra.ph/file/ecb7510e187f0e3b60852.jpg"
 
 # Admins, Channels & Users
 ADMINS = [897298824 1498911533]
@@ -37,12 +37,17 @@ DATABASE_NAME = "cluster0"
 COLLECTION_NAME = "Telegram_files"
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'JOSPSupport')
+LOG_CHANNEL = "-1001751100720"
+SUPPORT_CHAT = "https://t.me/+3FMHnwG5ED5jOWQ1"
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>Size:</b> {file_size}")
+CUSTOM_FILE_CAPTION = "<b><code>{file_name}</code></b>
+<b>▶️ Size : {file_size}</b>
+╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+♻️ 𝙅𝙊𝙄𝙉 :- @Anjalina_bot
+♻️ 𝙅𝙊𝙄𝙉 :- @cinemacollections
+╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝"
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>⍞ ᴛɪᴛʟᴇ:</b> <a href={url}>{title}</a>\n<b>〄 ᴛʏᴘᴇ:</b> {kind}\n<b>⟴ ʀᴇʟᴇᴀꜱᴇ ᴅᴀᴛᴇ:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>★ ʀᴀᴛɪɴɢ:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>⌥ ʀᴜɴᴛɪᴍᴇ:</b> <code>{runtime} minutes</code>\n<b>⌗ ɢᴇɴʀᴇ:</b> {genres}\n\n<b>⌬ ʟᴀɴɢᴜᴀɢᴇs:</b> {languages}\n<b>✠ ᴄᴏᴜɴᴛʀɪᴇs:</b> {countries}\n<a href='https://t.me/cinemacollections '>© cinemacollections</a></b>\n\n✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -53,6 +58,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+UPSTREAM_REPO = "https://github.com/ccadmin1/Movie-Bot"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
