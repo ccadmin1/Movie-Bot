@@ -42,12 +42,12 @@ SUPPORT_CHAT = "https://t.me/+3FMHnwG5ED5jOWQ1"
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = "<b><code>{file_name}</code></b>
+CUSTOM_FILE_CAPTION = """<b><code>{file_name}</code></b>
 <b>▶️ Size : {file_size}</b>
 ╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
 ♻️ 𝙅𝙊𝙄𝙉 :- @Anjalina_bot
 ♻️ 𝙅𝙊𝙄𝙉 :- @cinemacollections
-╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝"
+╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝"""
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>⍞ ᴛɪᴛʟᴇ:</b> <a href={url}>{title}</a>\n<b>〄 ᴛʏᴘᴇ:</b> {kind}\n<b>⟴ ʀᴇʟᴇᴀꜱᴇ ᴅᴀᴛᴇ:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>★ ʀᴀᴛɪɴɢ:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>⌥ ʀᴜɴᴛɪᴍᴇ:</b> <code>{runtime} minutes</code>\n<b>⌗ ɢᴇɴʀᴇ:</b> {genres}\n\n<b>⌬ ʟᴀɴɢᴜᴀɢᴇs:</b> {languages}\n<b>✠ ᴄᴏᴜɴᴛʀɪᴇs:</b> {countries}\n<a href='https://t.me/cinemacollections '>© cinemacollections</a></b>\n\n✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
