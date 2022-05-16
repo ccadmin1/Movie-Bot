@@ -89,7 +89,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+0WycHXxXrWExNmI1')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+0z9eOi1UBlM4ODll')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -134,7 +134,7 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+0WycHXxXrWExNmI1')
+                    InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+0z9eOi1UBlM4ODll')
                 ]
                 ]
             try:
@@ -244,7 +244,7 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+0WycHXxXrWExNmI1')
+            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+0z9eOi1UBlM4ODll')
         ]
         ]
     await client.send_cached_media(
