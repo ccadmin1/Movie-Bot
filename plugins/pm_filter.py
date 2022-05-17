@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"🗂️{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+35tXs6B4kT04YjRl')
+                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+97gmBAMfVDVlN2Q1')
             ]
             ]
             
@@ -927,14 +927,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="𝙉𝙀𝙓𝙏 ⫸", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+35tXs6B4kT04YjRl")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+97gmBAMfVDVlN2Q1")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="💠 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+35tXs6B4kT04YjRl")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+97gmBAMfVDVlN2Q1")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
