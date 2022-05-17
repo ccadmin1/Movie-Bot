@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('💫 𝙐𝙋𝘿𝘼𝙏𝙀𝙎', url='https://t.me/+35tXs6B4kT04YjRl')
+                InlineKeyboardButton('💫 𝙐𝙋𝘿𝘼𝙏𝙀𝙎', url='https://t.me/+97gmBAMfVDVlN2Q1')
             ],
             [
                 InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -89,7 +89,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
             ],[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+35tXs6B4kT04YjRl')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+97gmBAMfVDVlN2Q1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -134,7 +134,7 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+35tXs6B4kT04YjRl')
+                    InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+97gmBAMfVDVlN2Q1')
                 ]
                 ]
             try:
@@ -244,7 +244,7 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+35tXs6B4kT04YjRl')
+            InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+97gmBAMfVDVlN2Q1')
         ]
         ]
     await client.send_cached_media(
