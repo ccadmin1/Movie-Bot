@@ -142,7 +142,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit(f'⚠️ Hey, {query.from_user.first_name}! നിങ്ങൾ ചോദിച്ച മൂവി റിലീസ് ആയിട്ടില്ല എന്ന് തോന്നുന്നു😔. അല്ലെങ്കിൽ അത് ഞങ്ങൾ അപ്ലോഡ് ചെയ്തിട്ടില്ല😔                                     PLEASE WAIT...❤️‍🩹 This Movie Not Found In My DataBase ⚠️')
-            await asyncio.sleep(10)
+            await asyncio.sleep(20)
             await k.delete()
 
 
@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"🗂️{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+0WycHXxXrWExNmI1')
+                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+35tXs6B4kT04YjRl')
             ]
             ]
             
@@ -927,14 +927,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="𝙉𝙀𝙓𝙏 ⫸", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+0WycHXxXrWExNmI1")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+35tXs6B4kT04YjRl")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="💠 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+0WycHXxXrWExNmI1")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+35tXs6B4kT04YjRl")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
