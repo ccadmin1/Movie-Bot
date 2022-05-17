@@ -488,13 +488,11 @@ async def settings(client, message):
 @Client.on_chat_join_request()
 async def newad(bot, update):
     print(update.chat.id)
-    await bot.send_message(chat_id=update.from_user.id, buttons = [[
-            InlineKeyboardButton('➕ 𝘼𝘿𝘿 𝙈𝙀 𝙏𝙊 𝙔𝙊𝙐𝙍 𝘾𝙃𝘼𝙏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ', callback_data='help')
-            ],[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=f'https://t.me/+0z9eOi1UBlM4ODll')
-        ]])
+    await bot.send_message(chat_id=update.from_user.id, text="""I'm Movie Request Bot or You Can Call me as Auto Filter Bot  😍
+
+Here You Can Request Movie's, Just Sent Movie Name With Proper Google Spelling..!!
+
+Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /start""")
     await bot.approve_chat_join_request(chat_id=update.chat.id, user_id=update.from_user.id)
     
 @Client.on_message(filters.command('set_template'))
