@@ -487,9 +487,11 @@ async def settings(client, message):
 @Client.on_chat_join_request()
 async def newad(bot, update):
     print(update.chat.id)
-    await bot.send_message(chat_id=update.from_user.id)
+    await bot.send_message(chat_id=update.from_user.id, text="""I'm Movie Request Bot or You Can Call me as Auto Filter Bot  😍
+
+Here You Can Request Movie's, Just Sent Movie Name With Proper Google Spelling..!!
+Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /start""")
     await bot.approve_chat_join_request(chat_id=update.chat.id, user_id=update.from_user.id)
-    
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
