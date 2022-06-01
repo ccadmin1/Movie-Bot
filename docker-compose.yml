@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+   shop:
+    build: .
+    environment:
+      BOT_TOKEN: $BOT_TOKEN
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      CHANNELS: $CHANNELS
+      ADMINS: $ADMINS
+      P_TTI_SHOW_OFF: $P_TTI_SHOW_OFF
+      AUTH_CHANNEL: $AUTH_CHANNEL
+      LOG_CHANNEL: $LOG_CHANNEL
+      DATABASE_NAME: $DATABASE_NAME
+      DATABASE_URI: $DATABASE_URI
+      PICS: $PICS
