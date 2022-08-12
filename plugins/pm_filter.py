@@ -83,12 +83,6 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    
-        btn.insert(0, 
-        [
-            InlineKeyboardButton(f'🎪 {search} 🎪', 'dupe')
-        ]
-    )
 
     if 0 < offset <= 10:
         off_set = 0
